@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation {
+    width: 100%;
+    height: 60px;
+    background-color: #242429bf;
+    border-bottom: 0.5px solid #000000;
+    position: fixed;
+    z-index: 1030;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url('./gif-image.gif');
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: 80% 40%;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+section#home {
+    position: relative;
+    top: 300px;
+}
+
+header nav ul {
+    width: 95%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro {
+    width: 50%;
+    padding: 50px 20px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth; /* This adds smooth scrolling when clicking links */
+}
+
+.cta-button {
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Add fade-in effect for elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#typed-text, #typed-subtext {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+
+    width: 0; /* Start with no text visible */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.typing {
+    animation: typing 3.5s steps(30, end), forwards;
+    opacity: 1 !important;
+    width: 100% !important;
+}

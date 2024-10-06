@@ -14,10 +14,84 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif, 'Roboto';
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+}
+
+.title {
+    text-align: left;
+    position: relative;
+}
+
+.title h2 {
+    text-align: left;
+}
+
+.underline {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+} 
+
+.about-me-wrapper {
+    padding: 120px 200px;
+}
+
+.about-contents {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+
+#about {
+    min-height: 700px;
+    background-image: url('./my-image.JPG');
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: 130% 40%;
+}
+
+p.about-me {
+    color: gray;
+    width: 35%;
+}
+
+#experience>.title,
+#projects>.title,
+#education>.title {
+text-align: center;
+}
+
+#experience>.title h2,
+#projects>.title h2,
+#education>.title h2 {
+    text-align: center;
+}
+
+#experience>.title .underline,
+#projects>.title .underline,
+#education>.title .underline {
+    position: absolute;
+    right: 50%;
+}
+
+ul.experience-list,
+ul.project-lists,
+ul.education-lists {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li.experience-options,
+li.project-option,
+li.education-options {
+    width: 40%;
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 20px 10px;
 }
 
 header {

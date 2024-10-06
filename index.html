@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nadeem's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -28,27 +29,47 @@
 
     <main>
       <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I’m a Software Developer with experience in Python, full-stack
-          development, and AI. Currently pursuing my Master's in Digital
-          Engineering at OVGU, I’m passionate about applying AI in practical
-          solutions, from recommendation systems to deep learning for medical
-          imaging.
-        </p>
+        <div class="about-me-wrapper">
+        <div class="title">
+          <h2>About Me</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="about-contents">
+          <p class="about-me">
+            An experienced software developer with a strong foundation in AI,
+            machine learning, and web development. Currently pursuing a Master’s
+            in Digital Engineering at Otto von Guericke University, I have over
+            3 years of experience in building software solutions. Skilled in
+            Python, PyTorch, and modern web frameworks, I have developed
+            applications in areas like computer vision, NLP, and full-stack web
+            development.
+            <br>
+            With a solid background in research and industry, I’ve
+            contributed to projects that range from real-time image segmentation
+            and disease diagnosis systems to intelligent interview automation
+            platforms. I am passionate about applying my skills to innovative
+            projects that push the boundaries of technology and improve
+            real-world systems.
+          </p>
+        </div>
+    </div>
       </section>
 
       <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-          <li>
+        <div class="title">
+            <h2>Experience</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <ul class="experience-list">
+          <li class="experience-options">
             <h3>Software Developer</h3>
             <p>
               Developed software solutions at Fraunhofer, focusing on full-stack
               applications, Python development, and AI-powered systems.
             </p>
           </li>
-          <li>
+          <li class="experience-options">
             <h3>Full Stack Developer</h3>
             <p>
               Worked on web applications, leveraging modern JavaScript
@@ -59,23 +80,27 @@
       </section>
 
       <section id="projects">
+        <div class="title">
         <h2>Projects</h2>
-        <ul>
-          <li>
+        <div class="underline"></div>
+    </div>
+
+        <ul class="project-lists">
+          <li class="project-option">
             <h3>Movie Search Web App (Next.js)</h3>
             <p>
               Developed a movie search app with caching and recommendations
               functionality. The app uses Next.js for server-side rendering.
             </p>
           </li>
-          <li>
+          <li class="project-option">
             <h3>Interview QA System (Flask, NLP)</h3>
             <p>
               Built an intelligent QA system to automate interview processes,
               using pre-trained Google News word vectors and face recognition.
             </p>
           </li>
-          <li>
+          <li class="project-option">
             <h3>DL Segmentation of Meningiomas</h3>
             <p>
               Current work on deep learning models for medical imaging, focusing
@@ -86,23 +111,23 @@
       </section>
 
       <section id="education">
-        <h2>Education</h2>
-        <p>Master's in Digital Engineering, OVGU</p>
-        <p>Relevant courses: Machine Learning, Deep Learning, AI</p>
-      </section>
+        <div class="title">
+            <h2>Education</h2>
+            <div class="underline"></div>
+        </div>
+        <ul class="education-lists">
+            <li class="education-options">
+                <p>Master's in Digital Engineering, OVGU</p>
+                <p>University: Otto Von Guericke University, Magdeburg</p>
+                <p>CGPA: 1.9 (German Standard)</p>
+            </li>
+            <li class="education-options">
+                <p>Bachelors in Computer Science & Engineering</p>
+                <p>University: Government Engineering College, Palakkad</p>
+                <p>CGPA: 2.5 (German Standard)</p>
+            </li>
+        </ul>
 
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to send me a message!</p>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
       </section>
     </main>
 

@@ -58,16 +58,30 @@ p.about-me {
     width: 35%;
 }
 
+#experience {
+    background: black;
+    padding: 20px 0;
+}
+
 #experience>.title,
 #projects>.title,
-#education>.title {
+#education>.title,
+#skills>.title {
 text-align: center;
 }
 
 #experience>.title h2,
 #projects>.title h2,
-#education>.title h2 {
+#education>.title h2,
+#skills>.title h2 {
     text-align: center;
+}
+
+#experience>.title .underline {
+    background-color: white;
+}
+#experience>.title h2 {
+    color: white;
 }
 
 #experience>.title .underline,
@@ -75,6 +89,11 @@ text-align: center;
 #education>.title .underline {
     position: absolute;
     right: 50%;
+}
+
+#skills>.title .underline {
+    position: absolute;
+    right: 49%;
 }
 
 ul.experience-list,
@@ -167,7 +186,6 @@ header nav ul li a {
 }
 
 main {
-    padding: 20px;
     background-color: #fff;
 }
 
@@ -225,4 +243,104 @@ html {
     animation: typing 3.5s steps(30, end), forwards;
     opacity: 1 !important;
     width: 100% !important;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure cards wrap on small screens */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Card Styles */
+.card {
+    position: relative;
+    border: 1px solid white;
+    width: 70%; /* Fixed width for desktop */
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-icon.fraunhofer {
+    width: 110px;
+}
+
+.card-icon.ovgu {
+    width: 18%;
+}
+
+.card-icon.tcs {
+    width: 18%;
+    height: 50px;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+}
+
+/* Card Content Styles */
+.card-content {
+    text-align: left;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #638cc5; /* Deep blue for contrast */
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #457b9d; /* Lighter blue */
+}
+
+.card-date {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #a8a8a8;
+    margin-bottom: 1rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #6d6d6d;
+    line-height: 1.5;
+}
+
+.card-icon {
+    position: absolute;
+    right: 15px;
+    width: 110px;
+    height: 65px;
+}
+
+.skill-set {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 20px 200px;
+}
+
+.skil-set {
+    width: 12%;
+    margin: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skil-set i {
+    display: inline-block;
+    font-size: 130px;
+    height: 100%;
+}
+
+.skil-set:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
 }

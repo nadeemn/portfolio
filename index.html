@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nadeem's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -30,60 +39,219 @@
     <main>
       <section id="about">
         <div class="about-me-wrapper">
-        <div class="title">
-          <h2>About Me</h2>
-          <div class="underline"></div>
+          <div class="title">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+          </div>
+          <div class="about-contents">
+            <p class="about-me">
+              An experienced software developer with a strong foundation in AI,
+              machine learning, and web development. Currently pursuing a
+              Master’s in Digital Engineering at Otto von Guericke University, I
+              have over 3 years of experience in building software solutions.
+              Skilled in Python, PyTorch, and modern web frameworks, I have
+              developed applications in areas like computer vision, NLP, and
+              full-stack web development.
+              <br />
+              With a solid background in research and industry, I’ve contributed
+              to projects that range from real-time image segmentation and
+              disease diagnosis systems to intelligent interview automation
+              platforms. I am passionate about applying my skills to innovative
+              projects that push the boundaries of technology and improve
+              real-world systems.
+            </p>
+          </div>
         </div>
-        <div class="about-contents">
-          <p class="about-me">
-            An experienced software developer with a strong foundation in AI,
-            machine learning, and web development. Currently pursuing a Master’s
-            in Digital Engineering at Otto von Guericke University, I have over
-            3 years of experience in building software solutions. Skilled in
-            Python, PyTorch, and modern web frameworks, I have developed
-            applications in areas like computer vision, NLP, and full-stack web
-            development.
-            <br>
-            With a solid background in research and industry, I’ve
-            contributed to projects that range from real-time image segmentation
-            and disease diagnosis systems to intelligent interview automation
-            platforms. I am passionate about applying my skills to innovative
-            projects that push the boundaries of technology and improve
-            real-world systems.
-          </p>
-        </div>
-    </div>
       </section>
 
       <section id="experience">
         <div class="title">
-            <h2>Experience</h2>
-            <div class="underline"></div>
+          <h2>Experience</h2>
+          <div class="underline"></div>
         </div>
-        
-        <ul class="experience-list">
-          <li class="experience-options">
-            <h3>Software Developer</h3>
-            <p>
-              Developed software solutions at Fraunhofer, focusing on full-stack
-              applications, Python development, and AI-powered systems.
-            </p>
-          </li>
-          <li class="experience-options">
-            <h3>Full Stack Developer</h3>
-            <p>
-              Worked on web applications, leveraging modern JavaScript
-              frameworks and Python back-end development.
-            </p>
-          </li>
-        </ul>
+
+        <div class="cards-section">
+          <div class="card">
+            <div class="card-content">
+              <img
+                src="./Fraunhofer-IAIS-Logo.jpg"
+                class="card-icon fraunhofer"
+                alt="logo"
+              />
+              <h3 class="card-title">
+                Research Assistant - Python Developer (Part time)
+              </h3>
+              <h4 class="card-subtitle">Fraunhofer IAIS, Germany</h4>
+              <p class="card-date">Oct 2023 - Apr 2024</p>
+              <p class="card-description">
+                Developed Rest API endpoints using FASTAPI.
+                <br />
+                Wrote Unit and Integration tests, fixtures using Pytest.
+                <br />
+                Refactored the legacy code to implement dependency injection,
+                improving the performance.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <img
+                src="./ovgu_Logo_kleinc.png"
+                alt="logo"
+                class="card-icon ovgu"
+              />
+              <h3 class="card-title">
+                Research Assistant - Full Stack Developer (Part time)
+              </h3>
+              <h4 class="card-subtitle">
+                Otto Von Guericke University, Germany
+              </h4>
+              <p class="card-date">Aug 2022 - Sep 2023</p>
+              <p class="card-description">
+                Single-handedly designed and developed a responsive web
+                applicaiton from scratch using React and Flask.
+                <br />
+                Migrated the code to Next.Js for improved performance.
+                <br />
+                Integrated PRISMA Orm to optimize the database operations.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <img
+                src="./TCS_NewLogo_Final_RGB.png"
+                class="card-icon tcs"
+                alt="logo"
+              />
+              <h3 class="card-title">Application Developer</h3>
+              <h4 class="card-subtitle">Tata Consultancy Serives, India</h4>
+              <p class="card-date">July 2019 - Mar 2022</p>
+              <p class="card-description">
+                Developed web components for Bayer's global website using
+                Drupal, SCSS, and Twig, ensuring alignment with Agile project
+                goals.
+                <br />
+                Worked extensively on backend solutions in PHP (Drupal-8),
+                focusing on data management.
+                <br />
+                Implemented enhancement requests from the client that improved
+                the user experience.
+                <br />
+                Mentored junior developers and led the resolution of critical
+                bugs and client-raised issues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="title">
+          <h2>Skills</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="skill-set">
+          <div class="skil-set">
+            <i class="devicon-python-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-typescript-plain"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-pytorch-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-tensorflow-original-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-scikitlearn-plain colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-numpy-plain colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-pandas-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-flask-original-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-fastapi-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-react-original-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-nextjs-original-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-tailwindcss-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-css3-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-mysql-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-ubuntu-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-streamlit-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-sqlalchemy-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-pytest-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-opencv-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-npm-original-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-materialui-plain colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-linux-plain colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-jupyter-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-googlecloud-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-gitlab-plain-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-github-original-wordmark colored"></i>
+          </div>
+          <div class="skil-set">
+            <i class="devicon-githubactions-plain colored"></i>
+          </div>
+        </div>
       </section>
 
       <section id="projects">
         <div class="title">
-        <h2>Projects</h2>
-        <div class="underline"></div>
-    </div>
+          <h2>Projects</h2>
+          <div class="underline"></div>
+        </div>
 
         <ul class="project-lists">
           <li class="project-option">
@@ -112,22 +280,21 @@
 
       <section id="education">
         <div class="title">
-            <h2>Education</h2>
-            <div class="underline"></div>
+          <h2>Education</h2>
+          <div class="underline"></div>
         </div>
         <ul class="education-lists">
-            <li class="education-options">
-                <p>Master's in Digital Engineering, OVGU</p>
-                <p>University: Otto Von Guericke University, Magdeburg</p>
-                <p>CGPA: 1.9 (German Standard)</p>
-            </li>
-            <li class="education-options">
-                <p>Bachelors in Computer Science & Engineering</p>
-                <p>University: Government Engineering College, Palakkad</p>
-                <p>CGPA: 2.5 (German Standard)</p>
-            </li>
+          <li class="education-options">
+            <p>Master's in Digital Engineering, OVGU</p>
+            <p>University: Otto Von Guericke University, Magdeburg</p>
+            <p>CGPA: 1.9 (German Standard)</p>
+          </li>
+          <li class="education-options">
+            <p>Bachelors in Computer Science & Engineering</p>
+            <p>University: Government Engineering College, Palakkad</p>
+            <p>CGPA: 2.5 (German Standard)</p>
+          </li>
         </ul>
-
       </section>
     </main>
 

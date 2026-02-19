@@ -1,455 +1,991 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Nadeem Nazer's personal website showcasing projects in AI, machine learning, and software development."
+      content="Nadeem Nazer – AI Researcher &amp; Software Developer. Portfolio showcasing computer vision, NLP, LLMs, and full-stack projects."
     />
-    <meta
-      name="keywords"
-      content="Nadeem Nazer, AI, machine learning, deep learning, software development, Python, portfolio"
-    />
-    <title>Nadeem Nazer</title>
-
+    <meta name="author" content="Nadeem Nazer" />
+    <title>Nadeem Nazer | AI Researcher &amp; Developer</title>
+    <!-- Devicons -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
       rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <header>
-      <div class="overlay">
-        <nav class="navigation">
-          <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-          </ul>
-        </nav>
-        <section id="home">
-          <div class="intro">
-            <h1 id="typed-text"></h1>
-            <p id="typed-subtext"></p>
-          </div>
-        </section>
+    <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">NN<span class="dot">.</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </header>
+    </nav>
+
+    <!-- ═══════════════════════ HERO ═══════════════════════ -->
+    <section id="home" class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Nadeem Nazer</h1>
+        <h2 class="hero-title">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-bio">
+          AI Researcher &amp; Software Developer based in Germany, specialising
+          in
+          <strong>Deep Learning</strong>, <strong>Computer Vision</strong>,
+          <strong>LLM</strong>, and <strong>Full-Stack Development</strong>.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-social">
+          <a
+            href="https://www.linkedin.com/in/nadeem-nazer-87056114b/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/nadeemn"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:nadeemnazer@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="./my-image.jpg" alt="Nadeem Nazer" />
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll down"
+        ><i class="fas fa-chevron-down"></i
+      ></a>
+    </section>
 
     <main>
-      <section id="about">
-        <div class="about-me-wrapper">
-          <div class="title">
-            <h2>About Me</h2>
-            <div class="underline"></div>
+      <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">Who I Am</span>
+            <h2 class="section-title">About Me</h2>
           </div>
-          <div class="about-contents">
-            <p class="about-me">
-              An experienced software developer with a strong foundation in AI,
-              machine learning, and web development. Currently pursuing a
-              Master’s in Digital Engineering at Otto von Guericke University, I
-              have over 3 years of experience in building software solutions.
-              Skilled in Python, PyTorch, and modern web frameworks, I have
-              developed applications in areas like computer vision, NLP, and
-              full-stack web development.
-              <br />
-              With a solid background in research and industry, I am passionate
-              about applying my skills to innovative projects that push the
-              boundaries of technology and improve real-world systems.
-            </p>
-            <br />
-            <div class="socials">
-              <a
-                href="https://www.linkedin.com/in/nadeem-nazer-87056114b/"
-                title="LinkedIn"
-              >
-                <img
-                  alt="linkedin"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+          <div class="about-grid reveal">
+            <div class="about-text">
+              <p>
+                I'm an AI Research Engineer and Software Developer holding
+                <strong>Master's</strong> with specialisation in
+                <strong>Deep Learning & Generative Models</strong> from
+                <strong>Otto von Guericke University, Magdeburg</strong>. With
+                over <strong>4+ years of industry experience</strong>, I have
+                worked on projects spanning computer vision, NLP, and full-stack
+                web development.
+              </p>
+              <p>
+                I'm passionate about pushing the boundaries of AI - from
+                fine-tuning large vision-language models to building scalable
+                web applications. I thrive where research rigour meets practical
+                engineering.
+              </p>
+              <div class="about-stats">
+                <div class="stat">
+                  <span class="stat-number">4+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">8+</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">4</span>
+                  <span class="stat-label">Companies</span>
+                </div>
+              </div>
+              <div class="about-links">
+                <a
+                  href="https://www.linkedin.com/in/nadeem-nazer-87056114b/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline btn-sm"
+                >
+                  <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+                <a
+                  href="https://github.com/nadeemn"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline btn-sm"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="info-list">
+                <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i
+                  ><span>Magdeburg, Germany</span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-graduation-cap"></i
+                  ><span>M.Sc. Digital Engineering (OVGU)</span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-briefcase"></i
+                  ><span>AI Research Intern @ BCAI</span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-code"></i
+                  ><span>Python · PyTorch · React · FastAPI</span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-language"></i
+                  ><span>English (Fluent) · German (B1)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+      <section id="experience" class="section section-dark">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">Career</span>
+            <h2 class="section-title">Experience</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <img
+                    src="./bosch_center_for_artificial_intelligence_bcai_logo.jpg"
+                    alt="BCAI"
+                    class="timeline-logo"
+                  />
+                  <div>
+                    <h3 class="timeline-role">AI Research Intern
+                      <span class="part-time">Full-time</span>
+                    </h3>
+                    <p class="timeline-company">
+                      Bosch Center for Artificial Intelligence (BCAI), Germany
+                    </p>
+                    <span class="timeline-date"
+                      ><i class="far fa-calendar-alt"></i> Jan 2025 –
+                      Present</span
+                    >
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Researched and developed SOTA Deep Learning models for scene
+                    understanding using RT-DETR and YOLOP to deconstruct raw
+                    video data into semantic JSON representations, capturing
+                    object trajectories.
+                  </li>
+                  <li>
+                    Implemented perspective transformation algorithms to map 2D
+                    pixel-level detections into 3D metric coordinates, ensuring
+                    spatially accurate inputs for the downstream generation
+                    module.
+                  </li>
+                  <li>
+                    Developed an Agentic framework that consumes the JSON data
+                    to generate novel, adversarial driving scenarios.
+                  </li>
+                  <li>
+                    Leveraged Azure OpenAI GPT-4o model to parametrically
+                    augment scenes, applying RAG to ensure generated scenarios
+                    adhere to traffic regulations.
+                  </li>
+                  <li>
+                    Deployed the entire pipeline as microservices, using FastAPI
+                    , and Next.js, containerized via Docker and automated for
+                    production using GitHub Actions CI/ CD.
+                  </li>
+                  <li>
+                    Researched and developed a novel prompt-tuning framework for
+                    Vision-Language foundation models (CLIP) on Anomaly
+                    detection domain, achieving SOTA results on public datasets
+                    (avg. +4% accuracy) and a 35% performance increase on
+                    internal proprietary datasets
+                  </li>
+                  <li>
+                    Built a MLOps pipeline using MLFlow logging experiments,
+                    hyperparameters and managing model artefacts during ablation
+                    studies.
+                  </li>
+                  <li>
+                    Deployed the final model using Docker and FastAPI allowing
+                    zero-shot inference for real-time visual inspection.
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>PyTorch</span><span>Agentic AI</span><span>LVLMs</span
+                  ><span>Computer Vision</span><span>Deep Learning</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <img
+                    src="./ovgu_Logo_kleinc.png"
+                    alt="OVGU"
+                    class="timeline-logo"
+                  />
+                  <div>
+                    <h3 class="timeline-role">
+                      Research Assistant – Full Stack Developer
+                      <span class="part-time">Part-time</span>
+                    </h3>
+                    <p class="timeline-company">
+                      Otto Von Guericke University, Germany
+                    </p>
+                    <span class="timeline-date"
+                      ><i class="far fa-calendar-alt"></i> Aug 2024 – Dec
+                      2024</span
+                    >
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Developed a Health-LLM system by fine-tuning BioMistral-7B
+                    model on tele-clinic data.
+                  </li>
+                  <li>
+                    Implemented end-to-end RAG pipeline to retrieve related
+                    patient health reports from vector databases , and
+                    engineering few-shot examples to restrict LLM from
+                    hallucinating and generate context relevant response.
+                  </li>
+                  <li>
+                    Contributed to open-source project involving discrete
+                    mathematics proofs and logical reasoning (fitch.js)
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>LLMs</span><span>RAG</span><span>JavaScript</span
+                  ><span>In-context learning</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <img
+                    src="./Fraunhofer-IAIS-Logo.jpg"
+                    alt="Fraunhofer IAIS"
+                    class="timeline-logo"
+                  />
+                  <div>
+                    <h3 class="timeline-role">
+                      Research Assistant – Python Developer
+                      <span class="part-time">Part-time</span>
+                    </h3>
+                    <p class="timeline-company">Fraunhofer IAIS, Germany</p>
+                    <span class="timeline-date"
+                      ><i class="far fa-calendar-alt"></i> Oct 2023 – Apr
+                      2024</span
+                    >
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>Developed REST API endpoints using FastAPI.</li>
+                  <li>
+                    Wrote comprehensive unit and integration tests with Pytest,
+                    including fixtures and mocks.
+                  </li>
+                  <li>
+                    Refactored legacy code with dependency injection, improving
+                    performance and maintainability.
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>FastAPI</span><span>Python</span><span>Pytest</span
+                  ><span>REST API</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <img
+                    src="./ovgu_Logo_kleinc.png"
+                    alt="OVGU"
+                    class="timeline-logo"
+                  />
+                  <div>
+                    <h3 class="timeline-role">
+                      Research Assistant – Full Stack Developer
+                      <span class="part-time">Part-time</span>
+                    </h3>
+                    <p class="timeline-company">
+                      Otto Von Guericke University, Germany
+                    </p>
+                    <span class="timeline-date"
+                      ><i class="far fa-calendar-alt"></i> Aug 2022 – Sep
+                      2023</span
+                    >
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Designed and developed a responsive web application from
+                    scratch using React and Flask.
+                  </li>
+                  <li>
+                    Migrated the codebase to Next.js for improved performance
+                    and SEO.
+                  </li>
+                  <li>
+                    Integrated Prisma ORM to optimise database operations.
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>React</span><span>Next.js</span><span>Flask</span
+                  ><span>Prisma</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <img
+                    src="./TCS_NewLogo_Final_RGB.png"
+                    alt="TCS"
+                    class="timeline-logo"
+                  />
+                  <div>
+                    <h3 class="timeline-role">Application Developer
+                      <span class="part-time">Full-time</span>
+                    </h3>
+                    <p class="timeline-company">
+                      Tata Consultancy Services, India
+                    </p>
+                    <span class="timeline-date"
+                      ><i class="far fa-calendar-alt"></i> Jul 2019 – Mar
+                      2022</span
+                    >
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Developed web components for Bayer's global website using
+                    Drupal, SCSS, and Twig in an Agile team.
+                  </li>
+                  <li>
+                    Worked on PHP (Drupal 8) backend solutions for data
+                    management and content workflows.
+                  </li>
+                  <li>
+                    Implemented client-requested enhancements that improved user
+                    experience metrics.
+                  </li>
+                  <li>
+                    Mentored junior developers and led resolution of critical
+                    bugs.
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Drupal 8</span><span>PHP</span><span>SCSS</span
+                  ><span>Agile</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">Tech Stack</span>
+            <h2 class="section-title">Skills</h2>
+          </div>
+          <div class="skills-categories reveal">
+            <div class="skill-category">
+              <h3 class="skill-category-title">
+                <i class="fas fa-brain"></i> AI / ML
+              </h3>
+              <div class="skill-grid">
+                <div class="skill-chip">
+                  <i class="devicon-pytorch-plain colored"></i> PyTorch
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-tensorflow-original colored"></i> TensorFlow
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-scikitlearn-plain colored"></i> Scikit-learn
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-numpy-plain colored"></i> NumPy
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-pandas-plain colored"></i> Pandas
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-opencv-plain colored"></i> OpenCV
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-jupyter-plain colored"></i> Jupyter
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">
+                <i class="fas fa-code"></i> Languages
+              </h3>
+              <div class="skill-grid">
+                <div class="skill-chip">
+                  <i class="devicon-python-plain colored"></i> Python
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-javascript-plain colored"></i> JavaScript
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-typescript-plain colored"></i> TypeScript
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-html5-plain colored"></i> HTML5
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-css3-plain colored"></i> CSS3
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">
+                <i class="fas fa-layer-group"></i> Frameworks
+              </h3>
+              <div class="skill-grid">
+                <div class="skill-chip">
+                  <i class="devicon-react-original colored"></i> React
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-nextjs-original"></i> Next.js
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-flask-original"></i> Flask
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-fastapi-plain colored"></i> FastAPI
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-tailwindcss-plain colored"></i> Tailwind
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-streamlit-plain colored"></i> Streamlit
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-materialui-plain colored"></i> Material UI
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">
+                <i class="fas fa-database"></i> Databases &amp; Cloud
+              </h3>
+              <div class="skill-grid">
+                <div class="skill-chip">
+                  <i class="devicon-mysql-plain colored"></i> MySQL
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-mongodb-plain colored"></i> MongoDB
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-googlecloud-plain colored"></i> GCP
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-sqlalchemy-plain"></i> SQLAlchemy
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">
+                <i class="fas fa-tools"></i> Tools &amp; DevOps
+              </h3>
+              <div class="skill-grid">
+                <div class="skill-chip">
+                  <i class="devicon-github-original"></i> GitHub
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-gitlab-plain colored"></i> GitLab
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-githubactions-plain colored"></i> CI/CD
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-pytest-plain colored"></i> Pytest
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-linux-plain colored"></i> Linux
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-docker-plain colored"></i> Docker
+                </div>
+                <div class="skill-chip">
+                  <i class="devicon-npm-original-wordmark colored"></i> npm
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+      <section id="projects" class="section section-dark">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">What I've Built</span>
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card reveal">
+              <div class="project-card-header">
+                <div class="project-icon-wrap"><i class="fas fa-eye"></i></div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/nadeemn"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">Unsupervised Image Classification</h3>
+              <p class="project-desc">
+                Grouped images into semantically meaningful clusters without
+                ground truth using the SCAN method. Applied Grad-CAM to
+                highlight important image features.
+              </p>
+              <div class="project-tags">
+                <span>PyTorch</span><span>Python</span
+                ><span>Computer Vision</span>
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-card-header">
+                <div class="project-icon-wrap"><i class="fas fa-film"></i></div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/nadeemn"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">OMDB Browser</h3>
+              <p class="project-desc">
+                Movie search app with metadata display, caching, and
+                recommendation functionality. Built with Next.js and Tailwind
+                CSS.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span><span>Tailwind CSS</span><span>API</span>
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-card-header">
+                <div class="project-icon-wrap">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/nadeemn"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">Health-LLM: RAG Disease Diagnosis</h3>
+              <p class="project-desc">
+                Personalised health diagnosis using BioMistral-7B and LangChain
+                with RAG techniques, vector databases, and few-shot examples for
+                context-relevant responses.
+              </p>
+              <div class="project-tags">
+                <span>Python</span><span>LangChain</span><span>RAG</span
+                ><span>LLM</span>
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-card-header">
+                <div class="project-icon-wrap">
+                  <i class="fas fa-camera"></i>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/nadeemn"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">MLOps Real-Time Object Detection</h3>
+              <p class="project-desc">
+                Real-time image segmentation app with Streamlit and YOLOv8,
+                deployed on AWS SageMaker with a full MLOps pipeline for
+                continuous monitoring.
+              </p>
+              <div class="project-tags">
+                <span>Streamlit</span><span>YOLOv8</span
+                ><span>AWS SageMaker</span>
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-card-header">
+                <div class="project-icon-wrap">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/nadeemn"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">Interview Automation System</h3>
+              <p class="project-desc">
+                Intelligent QA system using Word Mover's Distance and a Google
+                News word vector model to assess semantic similarity between
+                candidate and expected answers.
+              </p>
+              <div class="project-tags">
+                <span>Python</span><span>Flask</span><span>NLP</span
+                ><span>OpenCV</span>
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-card-header">
+                <div class="project-icon-wrap">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/nadeemn"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">Time Series Forecasting – VertexAI</h3>
+              <p class="project-desc">
+                Built and deployed a forecasting model on Google VertexAI.
+                Visualised results and created an interactive dashboard with
+                Google Looker Studio.
+              </p>
+              <div class="project-tags">
+                <span>GCP</span><span>VertexAI</span><span>Looker Studio</span>
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-card-header">
+                <div class="project-icon-wrap">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/nadeemn"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">Chatbot for E-Commerce</h3>
+              <p class="project-desc">
+                AI chatbot handling common e-commerce queries built using a
+                feed-forward Neural Network with 2 hidden layers, served via a
+                Flask backend.
+              </p>
+              <div class="project-tags">
+                <span>PyTorch</span><span>Flask</span><span>JavaScript</span>
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-card-header">
+                <div class="project-icon-wrap">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/nadeemn"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">Search Result Clustering</h3>
+              <p class="project-desc">
+                Web app to search a topic and visualise clusters of Wikipedia
+                documents using Elasticsearch and K-Means clustering with an
+                interactive React frontend.
+              </p>
+              <div class="project-tags">
+                <span>React</span><span>Python</span><span>Elasticsearch</span
+                ><span>K-Means</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════ EDUCATION ═══════════════════════ -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">Academic Background</span>
+            <h2 class="section-title">Education</h2>
+          </div>
+          <div class="education-grid reveal">
+            <div class="education-card">
+              <div class="ed-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="ed-body">
+                <span class="ed-year">2022 – 2025</span>
+                <h3 class="ed-degree">Master's in Digital Engineering</h3>
+                <p class="ed-uni">
+                  Otto Von Guericke University, Magdeburg, Germany
+                </p>
+                <p class="ed-grade">
+                  <i class="fas fa-star"></i> CGPA: 1.7 (German Scale)
+                </p>
+                <div class="ed-tags">
+                  <span>Machine Learning</span><span>Deep Learning</span
+                  ><span>Data Science</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="education-card">
+              <div class="ed-icon"><i class="fas fa-university"></i></div>
+              <div class="ed-body">
+                <span class="ed-year">2015 – 2019</span>
+                <h3 class="ed-degree">
+                  B.Tech in Computer Science &amp; Engineering
+                </h3>
+                <p class="ed-uni">
+                  Government Engineering College, Palakkad, India
+                </p>
+                <p class="ed-grade">
+                  <i class="fas fa-star"></i> CGPA: 2.5 (German Scale)
+                </p>
+                <div class="ed-tags">
+                  <span>Algorithms</span><span>Data Structures</span
+                  ><span>Software Engineering</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+      <section id="contact" class="section section-dark">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">Let's Talk</span>
+            <h2 class="section-title">Contact Me</h2>
+          </div>
+          <div class="contact-grid reveal">
+            <div class="contact-info">
+              <p class="contact-intro">
+                I'm always open to new opportunities, collaborations, or just a
+                friendly chat. Feel free to reach out!
+              </p>
+              <div class="contact-items">
+                <a href="mailto:nadeemnazer123@gmail.com" class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span class="contact-item-label">Email</span
+                    ><span class="contact-item-value"
+                      >nadeemnazer123@gmail.com</span
+                    >
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/nadeem-nazer-87056114b/"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-item"
+                >
+                  <div class="contact-item-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <div>
+                    <span class="contact-item-label">LinkedIn</span
+                    ><span class="contact-item-value">Nadeem Nazer</span>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/nadeemn"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-item"
+                >
+                  <div class="contact-item-icon">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <div>
+                    <span class="contact-item-label">GitHub</span
+                    ><span class="contact-item-value">github.com/nadeemn</span>
+                  </div>
+                </a>
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <span class="contact-item-label">Location</span
+                    ><span class="contact-item-value">Stuttgart, Germany</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
                 />
-              </a>
-              <a href="https://github.com/nadeemn" title="Github">
-                <img
-                  alt="github"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
                 />
-              </a>
-            </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Your message…"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
           </div>
         </div>
-      </section>
-
-      <section id="experience">
-        <div class="title">
-          <h2>Experience</h2>
-          <div class="underline"></div>
-        </div>
-
-        <div class="cards-section">
-          <div class="card">
-            <div class="card-content">
-              <img
-                src="./bosch_center_for_artificial_intelligence_bcai_logo.jpg"
-                class="card-icon fraunhofer"
-                alt="logo"
-              />
-              <h3 class="card-title">AI Research Intern</h3>
-              <h4 class="card-subtitle">
-                Bosch Center for Artificial Intelligence, Germany
-              </h4>
-              <p class="card-date">Jan 2025 - present</p>
-              <p class="card-description">
-                Investigating zero/few-shot Visual Anomaly Detection using Large
-                Vision-Language Models (LVLMs).
-                <br />
-                Fine-tuning the CLIP (VLM) model using prompt tuning technique
-                for multi-defect classification and segmentation task.
-                <br />
-                Conducting extensive literature review on Visual Anomaly
-                Detection (VAD), open-vocabulary segmentation, and prompt
-                learning techniques.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <img
-                src="./Fraunhofer-IAIS-Logo.jpg"
-                class="card-icon fraunhofer"
-                alt="logo"
-              />
-              <h3 class="card-title">
-                Research Assistant - Python Developer (Part time)
-              </h3>
-              <h4 class="card-subtitle">Fraunhofer IAIS, Germany</h4>
-              <p class="card-date">Oct 2023 - Apr 2024</p>
-              <p class="card-description">
-                Developed Rest API endpoints using FASTAPI.
-                <br />
-                Wrote Unit and Integration tests, fixtures using Pytest.
-                <br />
-                Refactored the legacy code to implement dependency injection,
-                improving the performance.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <img
-                src="./ovgu_Logo_kleinc.png"
-                alt="logo"
-                class="card-icon ovgu"
-              />
-              <h3 class="card-title">
-                Research Assistant - Full Stack Developer (Part time)
-              </h3>
-              <h4 class="card-subtitle">
-                Otto Von Guericke University, Germany
-              </h4>
-              <p class="card-date">Aug 2022 - Sep 2023</p>
-              <p class="card-description">
-                Single-handedly designed and developed a responsive web
-                applicaiton from scratch using React and Flask.
-                <br />
-                Migrated the code to Next.Js for improved performance.
-                <br />
-                Integrated PRISMA Orm to optimize the database operations.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <img
-                src="./TCS_NewLogo_Final_RGB.png"
-                class="card-icon tcs"
-                alt="logo"
-              />
-              <h3 class="card-title">Application Developer</h3>
-              <h4 class="card-subtitle">Tata Consultancy Serives, India</h4>
-              <p class="card-date">July 2019 - Mar 2022</p>
-              <p class="card-description">
-                Developed web components for Bayer's global website using
-                Drupal, SCSS, and Twig, ensuring alignment with Agile project
-                goals.
-                <br />
-                Worked extensively on backend solutions in PHP (Drupal-8),
-                focusing on data management.
-                <br />
-                Implemented enhancement requests from the client that improved
-                the user experience.
-                <br />
-                Mentored junior developers and led the resolution of critical
-                bugs and client-raised issues.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills">
-        <div class="title">
-          <h2>Skills</h2>
-          <div class="underline"></div>
-        </div>
-
-        <div class="skill-set">
-          <div class="skil-set">
-            <i class="devicon-python-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-typescript-plain"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-pytorch-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-tensorflow-original-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-scikitlearn-plain colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-numpy-plain colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-pandas-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-flask-original-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-fastapi-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-react-original-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-nextjs-original-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-tailwindcss-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-css3-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-html5-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-mysql-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-mongodb-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-ubuntu-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-streamlit-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-sqlalchemy-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-pytest-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-opencv-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-npm-original-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-materialui-plain colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-linux-plain colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-jupyter-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-googlecloud-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-gitlab-plain-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-github-original-wordmark colored"></i>
-          </div>
-          <div class="skil-set">
-            <i class="devicon-githubactions-plain colored"></i>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="overlay">
-          <div class="title">
-            <h2>Projects</h2>
-            <div class="underline"></div>
-          </div>
-
-          <ul class="project-lists">
-            <li class="project-option">
-              <h3>Unsupervised Image Classification</h3>
-              <p>
-                Automatically grouped images into semantically meaningful
-                clusters without ground truth using SCAN (Semantic Clustering by
-                Adopting Nearest neighbors) method. For explanation, applied
-                grad-cam to generate a heatmap to show important features of
-                images.
-              </p>
-              <div class="project-icon">
-                <i class="devicon-pytorch-plain-wordmark"></i>
-                <i class="devicon-python-plain-wordmark"></i>
-              </div>
-            </li>
-            <li class="project-option">
-              <h3>OMDB Browser</h3>
-              <p>
-                Developed a movie search app where users can search for movies,
-                which lists and shows the meta-data of the movie with caching
-                and recommendations functionality.
-              </p>
-              <div class="project-icon">
-                <i class="devicon-nextjs-original-wordmark"></i>
-                <i class="devicon-tailwindcss-plain-wordmark"></i>
-              </div>
-            </li>
-            <li class="project-option">
-              <h3>
-                Health-LLM: Personalized Retrieval-Augmented Disease Diagnosis
-                System
-              </h3>
-              <p>
-                Developed a Health-LLM system using a pre-trained BioMistral-7B
-                model and langchain framework. Utilized RAG techniques to
-                retrieve relevant documents from vector databases , drawing
-                insights from few-shot examples and retrieved health reports to
-                get context relevant response.
-              </p>
-              <div class="project-icon">
-                <i class="devicon-python-plain-wordmark"></i>
-                <i class="devicon-pytorch-plain-wordmark"></i>
-              </div>
-            </li>
-            <li class="project-option">
-              <h3>MLOps-Driven Real Time Object Detection Web App</h3>
-              <p>
-                Created a real-time image segmentation app with Streamlit and
-                YOLOv8 , deployed on AWS SageMaker .
-              </p>
-              <div class="project-icon">
-                <i class="devicon-streamlit-plain-wordmark"></i>
-                <i class="devicon-pytorch-plain-wordmark"></i>
-                <i class="devicon-amazonwebservices-plain-wordmark"></i>
-              </div>
-            </li>
-            <li class="project-option">
-              <h3>Interview Automation System</h3>
-              <p>
-                Built an intelligent QA system with NLP techniques for interview
-                automation. Leveraged a pre-trained Google News word vector
-                model and applied Word Mover's Distance to accurately assess the
-                semantic similarity between candidate answers and expected
-                responses
-              </p>
-              <div class="project-icon">
-                <i class="devicon-python-plain-wordmark"></i>
-                <i class="devicon-flask-original-wordmark"></i>
-                <i class="devicon-opencv-plain-wordmark"></i>
-                <i class="devicon-jquery-plain-wordmark"></i>
-                <i class="devicon-bootstrap-plain"></i>
-              </div>
-            </li>
-            <li class="project-option">
-              <h3>Time series forecasting with Google VertexAI</h3>
-              <p>
-                Built and deployed a forecasting model on VertexAI . Vizualized
-                the result and created dashboard with Google Looker Studio .
-              </p>
-              <div class="project-icon">
-                <i class="devicon-googlecloud-plain-wordmark"></i>
-              </div>
-            </li>
-            <li class="project-option">
-              <h3>Chatbot for E-commerce</h3>
-              <p>
-                A simple AI-Based chatbot designed to provide support for
-                e-commerce platform. The chatbot handle common queries like
-                greetings, farewells, payment methods, return policy etc.Built
-                using simple feed-forward Neural Network with 2 hidden layers.
-              </p>
-              <div class="project-icon">
-                <i class="devicon-pytorch-plain-wordmark"></i>
-                <i class="devicon-flask-original-wordmark"></i>
-                <i class="devicon-javascript-plain"></i>
-              </div>
-            </li>
-            <li class="project-option">
-              <h3>Search Result Clustering</h3>
-              <p>
-                A web application where user can search for a topic and
-                visualize cluster of documents crawled from Wikipedia Topics,
-                using elastic search and Kmeans clustering.
-              </p>
-              <div class="project-icon">
-                <i class="devicon-react-original-wordmark"></i>
-                <i class="devicon-python-plain-wordmark"></i>
-                <i class="devicon-scikitlearn-plain"></i>
-                <i class="devicon-elasticsearch-plain-wordmark"></i>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="education">
-        <div class="title">
-          <h2>Education</h2>
-          <div class="underline"></div>
-        </div>
-        <ul class="education-lists">
-          <li class="education-options">
-            <h2 class="ed-year">2022-2025 (Expected)</h2>
-            <h3 class="ed-degree">Master's in Digital Engineering, OVGU</h3>
-            <h4 class="ed-uni">
-              University: Otto Von Guericke University, Magdeburg
-            </h4>
-            <p class="ed-grade">CGPA: 1.9 (German Standard)</p>
-          </li>
-          <li class="education-options">
-            <h2 class="ed-year">2015-2019</h2>
-            <h3 class="ed-degree">
-              Bachelors in Computer Science & Engineering
-            </h3>
-            <h4 class="ed-uni">
-              University: Government Engineering College, Palakkad
-            </h4>
-            <p class="ed-grade">CGPA: 2.5 (German Standard)</p>
-          </li>
-        </ul>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2024 Nadeem's Portfolio</p>
+    <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="footer-name">Nadeem Nazer</p>
+        <p class="footer-copy">&copy; 2025 · Built with HTML / CSS / JS</p>
+        <div class="footer-social">
+          <a
+            href="https://www.linkedin.com/in/nadeem-nazer-87056114b/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/nadeemn"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:nadeemnazer@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
     </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>
